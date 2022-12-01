@@ -63,7 +63,7 @@ p {
 
 .question-card {
     font-size: 2rem;
-    max-width: 30%;
+    max-width: 40%;
     margin: auto;
     text-align: center;
     margin-top: 5rem;
@@ -91,4 +91,8 @@ p {
 .submit {
     margin-top: 4rem;
     margin-bottom: 4rems;
+}
+
+.league {
+    display: flex;
 }

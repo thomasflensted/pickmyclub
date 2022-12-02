@@ -11,6 +11,26 @@ p {
     margin: 0;
 }
 
+.comingsoon {
+
+    font-size: 5rem;
+    background: rgb(255, 0, 0, 0.75);
+    /*display: none;*/
+    display: flex;
+    max-width: 80%;
+    color: #f7f7f7;
+    border-radius: 25px;
+    z-index: 10;
+    position: fixed;
+    padding: 4rem 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 13rem;
+}
+
+.comingsoon>h1 {
+    margin: 0;
+}
 
 .heading {
     font-size: 4rem;

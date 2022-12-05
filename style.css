@@ -32,6 +32,15 @@ p {
     margin: 0;
 }
 
+.result {
+    font-size: 6rem;
+    display: flex;
+    height: 100vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
 .heading {
     font-size: 4rem;
     font-weight: 600;

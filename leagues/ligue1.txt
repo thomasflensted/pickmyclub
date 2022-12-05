@@ -1,0 +1,20 @@
+AS Monaco
+Angers
+Bordeaux
+Caen
+Dijon FCO
+Guingamp
+Lille
+Lyon
+Marseille
+Metz
+Montpellier
+Nantes
+Nice
+Paris Saint-Germain
+SC Amiens
+Saint-Etienne
+Stade Rennes
+Strasbourg
+Toulouse
+Troyes

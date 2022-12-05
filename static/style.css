@@ -11,6 +11,21 @@ p {
     margin: 0;
 }
 
+.loading {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.loading>h1 {
+    font-weight: 600;
+    max-width: 15%;
+    text-align: center;
+}
+
 .comingsoon {
 
     font-size: 5rem;

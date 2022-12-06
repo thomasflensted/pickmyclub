@@ -11,8 +11,12 @@ p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .loading {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,13 +28,17 @@ p {
     font-weight: 600;
     max-width: 15%;
     text-align: center;
+    margin-top: 0;
+}
+
+.loading-animation {
+    width: 100px;
 }
 
 .comingsoon {
 
     font-size: 5rem;
     background: rgb(255, 0, 0, 0.75);
-    /*display: none;*/
     display: flex;
     max-width: 80%;
     color: #f7f7f7;
@@ -112,13 +120,13 @@ p {
     text-align: center;
     margin-top: 5rem;
     border-radius: 20px;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
+    border: 1px solid black;
     padding: 2.5rem 6rem;
     transition: transform .25s ease;
 }
 
 .question-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.015);
 }
 
 .options {
@@ -139,4 +147,20 @@ p {
 
 .league {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+    font-size: 2rem;
+}
+
+.league-select-label {
+    margin-right: 2rem;
+}
+
+.dropdown {
+    padding: .5rem 2rem .5rem 1.2rem;
+    font-size: 1.5rem;
+    background: #f7f7f7;
+    border: 1px solid black;
+    border-radius: 5px;
 }

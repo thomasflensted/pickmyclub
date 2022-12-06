@@ -1,39 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pick A Club For Me</title>
-        <link rel="stylesheet" href="/static/style.css">
-        <link rel="stylesheet" href="https://use.typekit.net/lfe2zlj.css">
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="/js/scripts.js"></script>
-    </head>
-    <body>
+{% extends 'layout.html' %}
+{% block content %}
 
-        <h1 class="heading">Pick A Club For Me</h1>
-        <div class="grid-container">
-            <img class="bouncing-ball" src="/content/football-animation.gif"
-                alt="Animation of bouncing football">
-            <div class="main-text">
-                <p>
-                    Your friends have a club. <br>
-                    Your colleagues have a club. <br>
-                    Your boss has a club. <br>
-                    You don't. <br>
-                </p>
-                <br>
-                <p>
-                    Don't worry. We're here to help. <br>
-                    You don't choose your club. <br>
-                    Your club chooses you. <br>
-                </p>
-            </div>
-        </div>
-        <button class="btn">
-            Answer a Few Questions to Find the Right Club for You
-        </button>
-    </body>
-</html>
+<h1 class="heading">Pick A Club For Me</h1>
+<div class="grid-container">
+    <img class="bouncing-ball" src="static/football-animation.gif"
+        alt="Animation of bouncing football">
+    <div class="main-text">
+        <p>
+            Your friends have a club. <br>
+            Your colleagues have a club. <br>
+            Your boss has a club. <br>
+            You don't. <br>
+        </p>
+        <br>
+        <p>
+            Don't worry. We're here to help. <br>
+            You don't choose your club. <br>
+            Your club chooses you. <br>
+        </p>
+    </div>
+</div>
+
+
+<button class="btn">
+    Answer a Few Questions to Find the Right Club for You
+</button>
+
+
+{% endblock content %}

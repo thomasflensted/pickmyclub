@@ -5,15 +5,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ title }}</title>
+
+        {% if title %}
+        <title>Pick My Club - {{ title }}</title>
+        {% else %}
+        <title>Pick My Club</title>
+        {% endif %}
+
         <link rel="stylesheet" href="/static/style.css">
         <link rel="stylesheet" href="https://use.typekit.net/lfe2zlj.css">
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <script src="/js/scripts.js"></script>
+        <script src="static/scripts.js"></script>
     </head>
 
     <body>
+
+        {% block content %}
+        {% endblock content %}
 
     </body>
 </html>

@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+
+{% for question in questions %}
+
+<!-- QUESTION CARD -->
+<div class="question-card">
+    <form action="">
+        <p class="question">
+            {{ question }}
+        </p>
+        <div class="options">
+            <div class="option">
+                <input type="radio" id="html" name="fav_language"
+                    value="Yes">
+                <label for="html">Yes</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="css" name="fav_language"
+                    value="No">
+                <label for="css">No</label>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endfor %}
+
+<div class="league">
+    <label class="league-select-label" for="cars">Select a League</label>
+    <select class="dropdown" name="leagues" id="leagues">
+        <option value="any">Any</option>
+        <option value="premier">Premier League (England)</option>
+        <option value="laliga">La Liga (Spain)</option>
+        <option value="bundes">Bundesliga (Germany)</option>
+        <option value="seriea">Serie A (Italy)</option>
+        <option value="ligue">Ligue 1 (France)</option>
+        <option value="eredivise">Eredivisie (The Netherlands)</option>
+    </select>
+</div>
+
+<button class="btn submit">Submit</button>
+
+{% endblock content %}

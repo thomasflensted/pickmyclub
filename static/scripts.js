@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('.btn').click(function () {
-        window.location = "questions.html";
+        window.location = "survey.html";
     });
 
     $('.submit').click(function () {

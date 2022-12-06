@@ -23,7 +23,7 @@ def main():
         currentLeague = leagueDict[league]
         for club in currentLeague:
             conn.execute( "insert into clubs (name, league, hasfans) values (?, ?, ?)", (club, league, 0))
-
+            
     conn.commit()
     conn.close()
 

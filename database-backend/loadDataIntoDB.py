@@ -24,9 +24,8 @@ def main():
         for club in currentLeague:
             conn.execute( "insert into clubs (name, league, hasfans) values (?, ?, ?)", (club, league, 0))
 
-    cursor = conn.execute("SELECT name,league FROM CLUBS WHERE league = 'Premier League'")
-    for row in cursor:
-        print(f"Club: {row[0]}, league: {row[1]}")
+    conn.commit()
+    conn.close()
 
 if __name__ == "__main__":
     main()
